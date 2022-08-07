@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- <link href="favicon.ico?" rel="icon" type="image/x-icon" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Nanum+Pen+Script&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous">
+  </script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Emilia Fuks</title>
+</head>
+
+<body>
+  <div class="headerBg wrapper">
+    <nav role="navigation">
+      <div class="menu-toggle"><span>Menu</span></div>
+      <ul class="menu">
+        <li>
+          <a href="#projects" class="link"><span>Projects</span></a>
+        </li>
+        <li>
+          <a href="#aboutMe" class="link"><span>About Me</span></a>
+        </li>
+        <li>
+          <a href="#contact" class="link"><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+    <header data-aos="fade-up" data-aos-once="true">
+      <div class="headerText">
+        <h1><span>Emilia Fuks</span></h1>
+        <p>
+          <span>Web Developer</span>
+        </p>
+        <p><span>AWS Certified Cloud Practitioner</span></p>
+      </div>
+      <div class="imageContainer">
+        <img src="assets/profile_image.JPG" alt="" />
+      </div>
+      <p class="scrollDownText"><i class="fas fa-angle-down"></i></p>
+    </header>
+  </div>
+  <main>
+
+    <section class="portfolioProjects" id="projects" data-aos="fade-up" data-aos-once="true">
+      <div class="wrapper">
+        <div class="projects" data-aos="fade-up" data-aos-once="true">
+        <h2>Projects</h2>
+      </div>
+      </div>
+      <div class="firstRow wrapper">
+        <div class="portfolioOne" data-aos="fade-right" data-aos-once="true">
+          <img src="assets/AWSpedia.jpg" alt="AWSpedia" class="videoOne hideMobile portfolioImage" />
+          <img src="assets/one.jpg" alt="" class="imageOne hideDesktop" />
+          <div class="overlayOne">
+            <i class="fas fa-times fa-2x closeOverlayOne"></i>
+            <h3>my AWSpedia</h3>
+            <p>
+              A website, which shows the different AWS services sorted by category. A visual learners aid, which I created while studying for my AWS Cloud Practitioner certification.
+            </p>
+            <ul class="toolsUsed">
+              <li>React</li>
+              <li>AWS Cloud</li>
+              <li>AWS Amplify</li>
+            </ul>
+            <div class="viewProject">
+              <a href="https://main.d1r3w7awpkxa8y.amplifyapp.com/" target="_blank" class="button">view
+                live</a>
+              <a href="https://github.com/emibass/myAWSpedia" target="_blank" class="button">github</a>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="portfolioTwo" data-aos="fade-left" data-aos-once="true">
+          <img src="assets/AnyRain.jpg" alt="anyRain" class="videoTwo hideMobile portfolioImage">
+          <img src="assets/two.jpg" alt="" class="imageOne hideDesktop" />
+
+          <div class="overlayTwo">
+            <i class="fas fa-times fa-2x closeOverlayTwo"></i>
+
+            <h3>Any Rain?</h3>
+            <p>
+              A React weather app showing the current weather and 3 day forcast for any given city.
+            </p>
+            <ul class="toolsUsed">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>API</li>
+            </ul>
+            <ul class="viewProject">
+              <!-- <a href="https://sharon-yi.com/intoTheVoid/" target="_blank" class="button">view live</a> -->
+              <a href="https://github.com/emibass/AnyRain" target="_blank" class="button">github</a>
+            </ul>
+          </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="secondRow wrapper">
+        <div class="portfolioThree" data-aos="fade-right" data-aos-once="true">
+          <video autoplay loop muted playsinline class="videoThree hideMobile">
+            <source src="assets/three.mp4" type="video/mp4" />
+          </video>
+          <img src="assets/three.jpg" alt="" class="imageOne hideDesktop" />
+
+          <div class="overlayThree">
+            <i class="fas fa-times fa-2x closeOverlayThree"></i>
+
+            <h3>Beeline</h3>
+            <p>
+              A web app that uses APIs and datasets to find the nearest
+              bike-share station to you and how many bikes/docks are
+              available.
+            </p>
+            <ul class="toolsUsed">
+              <li>APIs</li>
+              <li>HTML5</li>
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>Sass</li>
+            </ul>
+            <ul class="viewProject">
+              <a href="https://sharon-yi.com/beeline/" target="_blank" class="button">view live</a>
+              <a href="https://github.com/sandyAndSharonProject4/sandyAndSharonProject4" target="_blank"
+                class="button">github</a>
+            </ul>
+          </div>
+          </a>
+        </div>
+
+        <div class="portfolioFour" data-aos="fade-left" data-aos-once="true">
+            <img src="assets/ToDoList.jpg" alt="todolist" class="videoFour hideMobile portfolioImage" />
+            <img src="assets/one.jpg" alt="" class="imageOne hideDesktop" />
+
+          <div class="overlayFour">
+            <i class="fas fa-times fa-2x closeOverlayFour"></i>
+            <h3>To Do List</h3>
+            <p>
+              A simple "To-Do List" app created with Node.js and Express.js using a MongoDB database.
+            </p>
+            <ul class="toolsUsed">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>CRUD</li>
+            </ul>
+            <div class="viewProject">
+              <ul>
+              <a href="https://salty-cove-64230.herokuapp.com/" target="_blank" class="button">view
+                live</a>
+              <a href="https://github.com/emibass/ToDoList" target="_blank" class="button">github</a>
+            </ul>
+          </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutMe" id="aboutMe">
+      <div class="wrapper" data-aos="fade-up" data-aos-once="true">
+        <div class="aboutMeTop">
+          <div class="aboutMeBio">
+            <h2>About Me</h2>
+            <p>
+              I am strongly commercial with a solid customer service / problem solving background with practical engineering and customer service experience.
+            </p>
+            <p>
+            I am passionate about logic, problem solving, continuous learning and fundamentally building functional solutions to real world challenges.
+            </p>
+            <p>
+            This passion has developed into a strong interest in coding and following recent studies – I am now seeking an entry level role in a software development business or team where I can continue my learning while utilizing my diverse commercial experience to benefit the team.
+            </p>
+            <p>
+              Flexibility is important to me as I am a working parent of two young boys. 
+            </p>
+          </div>
+          <div class="aboutMeImage">
+            <img src="assets/aboutMe.jpg" alt="" />
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-once="true">
+          <h2>My Toolkit</h2>
+          <ul class="skills">
+            <li><img src="assets/icons/html.svg" alt="" />HTML5</li>
+            <li><img src="assets/icons/css.svg" alt="" />CSS3</li>
+            <li><img src="assets/icons/javascript.svg" alt="" />Javascript</li>
+            <li><img src="assets/icons/nodejs.svg" alt="" />Node.js</li>
+            <li><img src="assets/icons/react.svg" alt="" />React</li>
+            <li><img src="assets/icons/aws.png" alt="" />AWS Cloud</li>
+            <li><img src="assets/icons/github.svg" alt="" />Github</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact" data-aos="fade-up" data-aos-once="true" id="contact">
+    <div class="contactContainer wrapper">
+      <div class="contactInformation">
+        <h2>Contact me!</h2>
+        <p>
+          If you feel like I might be a good fit for your team, I'd love for you to get in touch.
+        </p>
+        <p>
+          Reach out on social media or using the contact form.
+        </p>
+        <ul class="socialIcons">
+          <li>
+            <a href="https://www.linkedin.com/in/emilia-fuks-b85a0713/"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/emibass"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="mailto:emilia.lippa@gmail.com"><i class="fas fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="contactForm">
+        <form action='thankyou/thanks' method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
+          <label for="name" class="visuallyHidden">name</label>
+          <input type="text" name="name" id="name" placeholder="name" autocomplete="off" required />
+          <label class="visuallyHidden" for="email">email</label>
+          <input type="email" name="email" id="email" placeholder="email" required />
+          <label class="visuallyHidden" for="message" autocomplete="off">message</label>
+          <textarea name="message" id="message" placeholder="message" required=""></textarea>
+          <div class="submit-container">
+            <button class="send" type="submit">send message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Developed by Emilia Fuks</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
