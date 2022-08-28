@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("hr").animate({left: "20px"}, "slow");
     $(".menu-toggle").click(function () {
       $(".menu-toggle").toggleClass("menu-open");
       $(".menu").toggleClass("active");
