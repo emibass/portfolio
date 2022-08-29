@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $("hr").animate({left: "20px"}, "slow");
     $(".menu-toggle").click(function () {
@@ -34,5 +35,7 @@ $(document).ready(function () {
     $(".closeOverlayFour").click(function () {
       $(".overlayFour").toggleClass("active");
     });
+
+ 
   });
   

@@ -250,11 +250,14 @@
         </ul>
       </div>
       <div class="contactForm">
-        <form action='thankyou/thanks' method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
+        <form action="https://formsubmit.co/ab51ff70c80ace29e37b4b948efd9bf0" method="POST" name="contact"> <input type='hidden' name='form-name' value='contact' />
+          <input type="hidden" name="_subject" value="New contact">
+          <input type="hidden" name="_next" value="/pages/thankyou.html"> 
+          <!-- edit thank you page -->
           <label for="name" class="visuallyHidden">name</label>
           <input type="text" name="name" id="name" placeholder="name" autocomplete="off" required />
           <label class="visuallyHidden" for="phone">phone number</label>
-          <input type="text" name="phone" id="phone" placeholder="phone number (optional)" />
+          <input type="text" name="phone" id="phone" placeholder="phone number (optional)" optional/>
           <label class="visuallyHidden" for="email">email</label>
           <input type="email" name="email" id="email" placeholder="email" required />
           <label class="visuallyHidden" for="message" autocomplete="off">message</label>
