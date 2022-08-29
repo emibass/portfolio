@@ -421,6 +421,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
             align-items: center;
     width: 100%;
   }
+
+  @media (max-width: 780px){
+    header {
+      height: auto;
+      padding-top: 7rem;
+    }
+  }
   
   @media (min-width: 780px) {
     header {
@@ -857,7 +864,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
         -ms-flex-align: center;
             align-items: center;
     border-radius: 10px;
-    background-color: rgba(49, 47, 47, 0.8);
+    background-color: rgba(89, 87, 87, 0.8);
     opacity: 0;
     display: none;
   }
