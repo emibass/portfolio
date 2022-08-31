@@ -2,7 +2,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     display: block;
   }
   
-  audio, canvas, video {
+  audio, canvas {
     display: inline-block;
   }
   
@@ -779,10 +779,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     margin-top: 80px;
   }
   
-  .hideDesktop {
-    display: none;
-  }
-  
   #projects {
     background-color: #EEEEEE;
     padding-top: 50px;
@@ -833,9 +829,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     overflow: hidden;
   }
   
-  /* .portfolioImage {
+  .portfolioImage {
     border: solid 1px white;
-  } */
+  }
   .portfolioImage:hover {
     cursor: pointer;
   }
@@ -847,7 +843,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     margin: 0 auto;
     position: absolute;
     width: 90%;
-    height: 350px;
+    height: 480px;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     display: -webkit-box;
@@ -1072,7 +1068,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   .portfolioThree,
   .portfolioFour {
     width: 100%;
-    height: 350px;
+    height: 480px;
     margin-bottom: 10%;
     border-radius: 10px;
     overflow: hidden;
