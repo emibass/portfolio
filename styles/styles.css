@@ -829,9 +829,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     overflow: hidden;
   }
   
-  .portfolioImage {
+  /* .portfolioImage {
     border: solid 1px white;
-  }
+  } */
   .portfolioImage:hover {
     cursor: pointer;
   }
