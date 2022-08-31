@@ -1068,7 +1068,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   .portfolioThree,
   .portfolioFour {
     width: 100%;
-    height: 480px;
+    height: 240px;
     margin-bottom: 10%;
     border-radius: 10px;
     overflow: hidden;
