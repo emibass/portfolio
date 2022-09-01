@@ -1074,7 +1074,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   .portfolioTwo,
   .portfolioThree,
   .portfolioFour {
-    width: auto;
     height: 350px;
     margin-bottom: 10%;
     border-radius: 10px;
@@ -1162,15 +1161,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
               justify-content: space-between;
     }
   }
-  
-  .firstRow .portfolioOne {
+.firstRow .portfolioOne {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
+    /* -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
+            justify-content: flex-start; */
+  } 
   
   @media (min-width: 780px) {
     .firstRow .portfolioOne {
@@ -1220,7 +1218,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     }
   }
   
-  .firstRow .portfolioTwo video {
+  /* .firstRow .portfolioTwo video {
     height: 100%;
     margin-right: -30px;
   }
@@ -1231,9 +1229,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
       margin-top: -30px;
       margin-right: 0;
     }
-  }
+  } */
   
-  @media (min-width: 540px) and (min-width: 780px) {
+  /* @media (min-width: 540px) and (min-width: 780px) {
     .firstRow .portfolioTwo video {
       height: 100%;
       margin-top: 0;
@@ -1245,7 +1243,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     .firstRow .portfolioTwo video {
       margin-right: -30px;
     }
-  }
+  } */
   
   @media (min-width: 780px) {
     .secondRow {
@@ -1266,9 +1264,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
+    /* -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
+            justify-content: flex-start; */
   }
   
   @media (min-width: 780px) {
@@ -1277,7 +1275,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     }
   }
   
-  .secondRow .portfolioThree video {
+  /* .secondRow .portfolioThree video {
     height: 100%;
     margin-left: -30px;
   }
@@ -1296,13 +1294,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
       margin-top: 0;
       margin-left: -30px;
     }
-  }
+  } */
   
-  @media (min-width: 1080px) {
+  /* @media (min-width: 1080px) {
     .secondRow .portfolioThree video {
       margin-left: -25px;
     }
-  }
+  } */
   
   .secondRow .portfolioFour {
     display: -webkit-box;
