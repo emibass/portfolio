@@ -791,7 +791,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
   }
   .projects {
-    height: 100%;
     padding: 30px auto;
     margin-bottom: 30px;
     display: -webkit-box;
