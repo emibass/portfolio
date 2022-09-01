@@ -440,7 +440,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   }
   
   header .imageContainer {
-    max-width: 50%;
+    max-width: 40%;
   }
 
   @media (min-width: 540px) {
@@ -451,7 +451,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
   @media (min-width: 780px) {
     header .imageContainer {
-      max-width: 350px;
+      max-width: 250px;
     }
 
   }
@@ -718,7 +718,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   }
   
   .aboutMe .aboutMeTop .aboutMeImage img {
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
   }
   
@@ -886,9 +886,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     .overlayTwo,
     .overlayThree,
     .overlayFour {
-      height: 400px;
+    height: 400px;
     }
   }
+    
   
   .overlayOne .closeOverlayOne,
   .overlayOne .closeOverlayTwo,
@@ -1073,21 +1074,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   .portfolioTwo,
   .portfolioThree,
   .portfolioFour {
-    width: 100%;
+    width: auto;
     height: 350px;
     margin-bottom: 10%;
     border-radius: 10px;
     overflow: hidden;
   }
   
-  @media (min-width: 540px) {
+   @media (min-width: 540px) {
     .portfolioOne,
     .portfolioTwo,
     .portfolioThree,
     .portfolioFour {
       height: 400px;
     }
-  }
+  } 
   
   @media (min-width: 780px) {
     .portfolioOne,
