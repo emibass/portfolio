@@ -9,17 +9,17 @@ $(document).ready(function () {
       $(".menu-toggle").toggleClass("menu-open");
       $(".menu").toggleClass("active");
     });
-    $(".videoOne").click(function () {
+    $(".ImageOne").click(function () {
       $(".overlayOne").toggleClass("active");
     });
-    $(".videoTwo").click(function () {
+    $(".ImageTwo").click(function () {
       console.log("i was clicked");
       $(".overlayTwo").toggleClass("active");
     });
-    $(".videoThree").click(function () {
+    $(".ImageThree").click(function () {
       $(".overlayThree").toggleClass("active");
     });
-    $(".videoFour").click(function () {
+    $(".ImageFour").click(function () {
       $(".overlayFour").toggleClass("active");
     });
     $(".closeOverlayOne").click(function () {

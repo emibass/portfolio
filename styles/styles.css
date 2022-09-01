@@ -314,7 +314,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     -webkit-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out;
   }
-  
+
+
   .menu-toggle::before, .menu-toggle::after {
     left: 0;
     content: "";
@@ -404,6 +405,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     width: 18px;
   }
   
+  @media  (max-width: 540px){
+    .menu-toggle span {
+      background: #495664;
+      }
+    .menu-toggle::before {
+    background: #495664;
+    }
+    .menu-toggle::after {
+    background: #495664;
+    }
+    .menu-toggle.menu-open::before {
+    background: #495664;
+    }
+    .menu-toggle.menu-open::after {
+      background: #495664;
+    }
+
+  }
+  
+
   header {
     height: 100vh !important;
     display: -webkit-box;
@@ -516,7 +537,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     z-index: -1;
   } */ */
   
-  header .arrow {
+  /* header .arrow {
     position: absolute;
     text-align: center;
     padding-top: 90vh;
@@ -525,53 +546,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     color: #F6C90E;
     z-index: -11;
   }
-  
-  header .fa-angle-down {
-    -webkit-animation-duration: 0.8s;
-            animation-duration: 0.8s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    -webkit-animation-name: bounce;
-            animation-name: bounce;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
+   */
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
   }
 
-  header .arrow:hover {
+  .arrow {
+    display: none;
+  }
+
+@media (min-width: 780px){
+  .arrow{
+      position: absolute;
+      left: 50%;
+      padding-top: 250px;
+      display: block;
+      /* transform: translate(50%,50%); */
+  }
+  .arrow span{
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-bottom: 3px solid #F6C90E;
+      border-right: 3px solid #F6C90E;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+  }
+
+  .arrow span:nth-child(2){
+      animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+      animation-delay: -0.4s;
+  }
+  @keyframes animate {
+      0%{
+          opacity: 0;
+          transform: rotate(45deg) translate(-20px,-20px);
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+          transform: rotate(45deg) translate(20px,20px);
+      }
+  }
+  .arrow:hover {
     cursor: pointer;
   }
-  
-  @-webkit-keyframes bounce {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-3px);
-              transform: translateY(-3px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-  }
-  
-  @keyframes bounce {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-3px);
-              transform: translateY(-3px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-  }
+}
   
   header p span {
     color: #F6C90E;
@@ -642,8 +669,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     content: "";
     position: absolute;
     background-color: #F6C90E;
-    /* -webkit-box-shadow: 0 0 8px #EEEEEE;
-            box-shadow: 0 0 8px #EEEEEE; */
     height: 2px;
     left: 20px;
     bottom: 0;
@@ -723,7 +748,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   }
   
   .skills {
-    /* font-family: "Nanum Pen Script", "cursive"; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1175,33 +1199,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
       width: 60%;
     }
   }
-/*   
-  .firstRow .portfolioOne video {
-    height: 100%;
-    margin-left: -30px;
-  }
-  
-  @media (min-width: 540px) {
-    .firstRow .portfolioOne video {
-      height: 120%;
-      margin-top: -40px;
-      margin-left: 0;
-    }
-  }
-  
-  @media (min-width: 780px) {
-    .firstRow .portfolioOne video {
-      height: 100%;
-      margin-top: 0;
-    }
-  }
-  
-  @media (min-width: 1080px) {
-    .firstRow .portfolioOne video {
-      height: 114%;
-      margin-top: -25px;
-    }
-  } */
   
   .firstRow .portfolioTwo {
     display: -webkit-box;
@@ -1218,32 +1215,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     }
   }
   
-  /* .firstRow .portfolioTwo video {
-    height: 100%;
-    margin-right: -30px;
-  }
-  
-  @media (min-width: 540px) {
-    .firstRow .portfolioTwo video {
-      height: 120%;
-      margin-top: -30px;
-      margin-right: 0;
-    }
-  } */
-  
-  /* @media (min-width: 540px) and (min-width: 780px) {
-    .firstRow .portfolioTwo video {
-      height: 100%;
-      margin-top: 0;
-      margin-right: -45px;
-    }
-  }
-  
-  @media (min-width: 540px) and (min-width: 1080px) {
-    .firstRow .portfolioTwo video {
-      margin-right: -30px;
-    }
-  } */
   
   @media (min-width: 780px) {
     .secondRow {
@@ -1275,32 +1246,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     }
   }
   
-  /* .secondRow .portfolioThree video {
-    height: 100%;
-    margin-left: -30px;
-  }
-  
-  @media (min-width: 540px) {
-    .secondRow .portfolioThree video {
-      height: 120%;
-      margin-top: -40px;
-      margin-left: 0;
-    }
-  }
-  
-  @media (min-width: 780px) {
-    .secondRow .portfolioThree video {
-      height: 100%;
-      margin-top: 0;
-      margin-left: -30px;
-    }
-  } */
-  
-  /* @media (min-width: 1080px) {
-    .secondRow .portfolioThree video {
-      margin-left: -25px;
-    }
-  } */
   
   .secondRow .portfolioFour {
     display: -webkit-box;
@@ -1316,33 +1261,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
       width: 60%;
     }
   }
-/*   
-  .secondRow .portfolioFour video {
-    height: 100%;
-    margin-right: -30px;
-  }
-  
-  @media (min-width: 540px) {
-    .secondRow .portfolioFour video {
-      height: 119%;
-      margin-top: -35px;
-      margin-right: 0;
-    }
-  }
-  
-  @media (min-width: 780px) {
-    .secondRow .portfolioFour video {
-      height: 100%;
-      margin-top: 0;
-    }
-  }
-  
-  @media (min-width: 1080px) {
-    .secondRow .portfolioFour video {
-      height: 114%;
-      margin-top: -25px;
-    }
-  } */
+
   
   .contact {
     background-color: #EEEEEE;
