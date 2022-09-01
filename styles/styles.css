@@ -835,7 +835,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   }
   
   /* .portfolioImage {
-    border: solid 1px white;
+    align-self: center;
   } */
   .portfolioImage:hover {
     cursor: pointer;
@@ -1078,7 +1078,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     margin-bottom: 10%;
     border-radius: 10px;
     overflow: hidden;
-    align-self: center;
   }
   
    @media (min-width: 540px) {
@@ -1166,10 +1165,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* -webkit-box-pack: start;
+    -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; */
-    align-self: center;
+            justify-content: flex-start;
   } 
   
   @media (min-width: 780px) {
@@ -1266,9 +1264,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* -webkit-box-pack: start;
+    -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; */
+            justify-content: flex-start;
   }
   
   @media (min-width: 780px) {
