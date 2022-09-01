@@ -440,7 +440,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   }
   
   header .imageContainer {
-    max-width: 75%;
+    max-width: 50%;
+  }
+
+  @media (min-width: 540px) {
+    header .imageContainer {
+    max-width: 150px;
+    }
   }
 
   @media (min-width: 780px) {
@@ -809,15 +815,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   /* .projects h2::after {
     content: "";
     position: absolute;
-    background-color: #EEEEEE;
-    -webkit-box-shadow: 0 0 8px #EEEEEE;
-            box-shadow: 0 0 8px #EEEEEE;
-    height: 18px;
-    left: 5px;
+    background-color: #495664;
+     /* -webkit-box-shadow: 0 0 8px #EEEEEE;
+            box-shadow: 0 0 8px #EEEEEE;  */
+    /* height: 2px;
+    left: 20px;
     bottom: 0;
-    width: 180px;
-    z-index: -1;
-  } */
+    width: 250px;
+    z-index: -1; 
+   }  */
 
   .projects p {
     font-size: 1.8rem;
@@ -843,7 +849,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     margin: 0 auto;
     position: absolute;
     width: 90%;
-    height: 600px;
+    height: 350px;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     display: -webkit-box;
@@ -1068,7 +1074,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   .portfolioThree,
   .portfolioFour {
     width: 100%;
-    height: 600px;
+    height: 350px;
     margin-bottom: 10%;
     border-radius: 10px;
     overflow: hidden;
