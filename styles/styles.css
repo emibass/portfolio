@@ -1078,6 +1078,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     margin-bottom: 10%;
     border-radius: 10px;
     overflow: hidden;
+    align-self: center;
   }
   
    @media (min-width: 540px) {
@@ -1168,6 +1169,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     /* -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; */
+    align-self: center;
   } 
   
   @media (min-width: 780px) {
